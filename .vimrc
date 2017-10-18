@@ -1,12 +1,18 @@
-﻿syntax on
+﻿filetype plugin on
+syntax on 
+colorscheme dracula
+set t_Co=256
 set encoding=utf-8 
 set bomb
-set t_Co=256
-set tabstop=2
 set shiftwidth=2
 set number
+set tabstop=2
 set lines=35 columns=120
-
+set guifont=Fira_Code:h11
+set linespace=6
+set nocompatible
+set path+=**
+set wildmenu
 
 " Plugins settings
 nnoremap <C-e> :NERDTreeToggle<CR>
@@ -34,6 +40,9 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 " Required:
 NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'evidens/vim-twig'
+NeoBundle 'crusoexia/vim-dracula'
+NeoBundle 'pangloss/vim-javascript'
+NeoBundle 'burnettk/vim-angular'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'matze/vim-move'
 NeoBundle 'tpope/vim-fugitive'
@@ -43,7 +52,6 @@ NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'vim-airline/vim-airline'
 NeoBundle 'Shougo/denite.nvim'
 NeoBundle 'Shougo/unite.vim'
-NeoBundle 'Shougo/vimproc'
 NeoBundle 'Quramy/tsuquyomi'
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'vim-startify'
@@ -52,7 +60,6 @@ NeoBundle 'tpope/vim-flagship'
 NeoBundle 'easymotion/vim-easymotion'
 NeoBundle 'mattn/emmet-vim'
 NeoBundle 'leafgarland/typescript-vim'
-NeoBundle 'crusoexia/vim-monokai'
 
 " My Bundles here:
 " Refer to |:NeoBundle-examples|.
